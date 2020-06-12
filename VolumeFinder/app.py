@@ -13,23 +13,26 @@ else:
 
 def cylinder(r, h):
     answer = 3.14*r*r*h
-    print(f"The volume is : {answer}")
+    print(f"The volume is : {answer} cubic.{unit}")
     print(f"Thanks for using our product. Review it at www.github.com")
 
 def cube(s):
     answer = s*s*s
-    print(f"The volume is : {answer}")
+    print(f"The volume is : {answer} cubic.{unit}")
     print(f"Thanks for using our product. Review it at www.github.com")
 
 
 def cuboid(w, l, h):
     answer = w*l*h
-    print(f"The volume is : {answer}")
+    print(f"The volume is : {answer} cubic.{unit}")
     print(f"Thanks for using our product. Review it at www.github.com")
 
 
 if y == True:
-    category = input("Do you want to find the volume of a cylinder, cube or a cuboid. (1, 2, 3)")
+    category = input("Do you want to find the volume of a cylinder, cube or a cuboid. (1, 2, 3): ")
+    print("Make sure all your units are the same!")
+    unit_input = input("Are all your units going to be in metre or centimetre (m or cm)?: ")
+    unit = unit_input.lower()
     if category == '1':
         radius = int(input("Enter the radius : "))
         height = int(input("Enter the cylinder's height : "))
@@ -41,4 +44,5 @@ if y == True:
         width = int(input("Enter the width : "))
         length = int(input("Enter the length : "))
         height = int(input("Enter the height : "))
+        cuboid(width, length, height)
 
