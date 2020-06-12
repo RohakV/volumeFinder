@@ -1,14 +1,16 @@
 # volumeFinder
 
-# Update 0.0.1 Patch Logs
+# Update 0.0.2 Patch Logs
 -------------------------
 
 # Created:
 
-1. Volume Finder for Cuboid
-2. Volume Finder for Cube
-3. Volume Finder for Cylinder
+1. Units
 
 # Bugs:
 
-No bugs so far!
+Cuboid volume not working
+
+# Bugs fixed:
+
+1. Fixed Cuboid Volume. It is now working fine.
